@@ -1,0 +1,361 @@
+body 
+    margin: 0
+
+.hide 
+    display: none
+.show 
+    display: block
+    transition: transform .5s ease
+
+
+    
+.nav__container
+    background-color: #171717
+    padding-left: 80px
+    padding-right: 35px
+    display: flex
+    justify-content: space-between
+    color: #fff
+
+.hamburger__icon
+    padding-top: 30px
+    padding-bottom: 30px
+
+.lang-and-social-container
+    padding-top: 20px
+    padding-bottom: 20px
+    display: flex
+    .social
+     padding-left: 17px
+
+
+.slider__container 
+    width: 100%
+    position: relative
+    max-height: 920px
+    overflow: hidden
+    img
+     width: 100%
+     height: 100%
+
+.slider__item 
+    margin-bottom: -20px
+
+
+
+
+
+    
+
+.aside-nav__container
+    background: #171717
+    position: absolute
+    max-width: 250px
+    max-height: 300px
+    padding-left: 70px
+    padding-right: 50px
+    padding-top: 40px
+    padding-bottom: 40px
+    z-index: 1
+    .aside__list
+        padding: 0
+        margin: 0
+    .aside__li
+      margin-bottom: 25px
+      list-style: none
+    .aside__li > a
+      font-size: 16px
+      font-family: "Montserrat"
+      color: rgb(255, 255, 255)
+      font-weight: bold
+      line-height: 1.2
+      text-decoration: none
+
+
+
+.lang__container 
+    padding-right: 103px
+    padding-top: 10px
+    .lang__choice
+       font-size: 16px
+       font-family: "Montserrat"
+       color: rgb(255, 255, 255)
+       font-weight: bold
+       text-transform: uppercase
+       line-height: 1.2
+       text-align: center
+
+.main-logo__container
+     max-width: 100%
+     position: absolute
+     top: 45px
+     left: 35%
+     .main-logo__pic 
+       width: 100%
+
+.side-news__container
+      position: absolute
+      top: 25%
+      max-width: 260px
+      right: 0
+      background: rgb(255,255,255)
+      background: linear-gradient(90deg, rgba(70, 12, 15, 0) 0%, #460c0fba 50%, #460c0f 100%)
+      padding: 20px 40px
+      display: flex
+      flex-direction: column
+      align-items: center
+      .side-news__title
+           color: #fff
+           font-family: "Montserrat"
+      .side-news__content
+           color: #fff
+           margin-bottom: 25px
+           text-align: justify
+           font-family: "Montserrat"
+      .side-news__btn
+           display: block
+           color: #351d1e
+           text-align: center
+           background-color: #cfcbcd
+           padding: 10px 25px
+           font-family: "Montserrat"
+           font-weight: bold
+           text-decoration: none
+
+
+.side-contact__container
+    position: absolute 
+    bottom: 20px
+    right: 53px
+    .side-contact__btn
+       display: block
+       background-color: #460b0e
+       max-width: 170px 
+       margin-bottom: 15px
+       padding: 10px
+       color: #ffffff
+       font-weight: bold  
+       font-size: 18px
+       font-family: "Montserrat" 
+       text-decoration: none
+
+.slider__slide-name-block
+    position: absolute
+    bottom: 17%
+    left: 14%
+    right: auto
+    .slide__name
+        font-size: 48px
+        font-family: "Montserrat"
+        color: rgb(255, 255, 255)
+        font-weight: bold
+        text-shadow: 0px 0px 5.82px rgba(0, 0, 0, 0.004)
+    .slide__btn
+        background-color: #460b0e
+        padding: 15px 20px
+        font-size: 18px
+        font-family: "Montserrat"
+        color: rgb(255, 255, 255)
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 1.2
+        text-decoration: none
+
+.nav-bottom 
+    background: #171717
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin: 0
+        padding-bottom: 15px
+        padding-top: 25px
+        list-style: none
+    &__li
+        margin-bottom: 15px
+    &__link
+        font-size: 16px
+        font-family: "Montserrat"
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 1.2
+        text-align: center
+        color: rgb(207, 203, 205)
+        text-decoration: none
+        &:after 
+            content: ""
+            border-right: 2px solid rgb(207, 203, 205)
+            margin-left: 55px
+            margin-right: 25px
+
+%template-container
+    padding-left: 260px
+    padding-right: 260px
+
+.main-body
+    background: url('../img/main-bg.png')
+    min-height: 800px
+    .main-body__container
+        @extend %template-container
+        padding-bottom: 150px
+        padding-top: 150px
+
+.actual-projects__film-row
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+=section-title
+   font-size: 30px
+   font-family: "Montserrat"
+   color: rgb(23, 23, 23)
+   font-weight: bold
+   text-transform: uppercase
+   line-height: 1.2
+
+.film 
+    max-width: 200px
+    margin: 15px
+
+.actual-projects__title
+    +section-title
+    margin-bottom: 65px
+
+.film__title 
+    font-size: 18px
+    font-family: "Montserrat"
+    color: rgb(23, 23, 23)
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 1.2
+    text-align: center
+
+
+.main-footer
+    background: #171717
+    &__logo
+        max-width: 260px
+        margin-bottom: 50px
+    &__container
+         @extend %template-container
+         padding-top: 60px
+         padding-bottom: 40px
+         display: flex
+         flex-wrap: wrap
+         justify-content: center
+    &__menu
+        display: flex
+        flex-wrap: wrap
+    &__item
+        max-width: 200px
+        padding-left: 70px
+        list-style: none
+        ul 
+            padding:0
+            margin-top: 30px
+        h3 
+               font-family: "Montserrat"
+               color: rgb(207, 203, 205)
+               font-weight: bold
+               margin-top: 0
+               margin-bottom: 0
+               margin-block-start: 0
+               margin-block-end: 0
+               font-size: 18px
+        li     
+            margin-bottom: 10px
+
+        a      
+               color: rgb(207, 203, 205)
+               font-family: "Montserrat"
+               text-decoration: none
+               margin-bottom: 10px
+               font-size: 16px
+    
+
+
+@font-face 
+ font-family: "Montserrat"
+ src: url("../fonts/Montserrat-Medium.ttf")
+
+
+@keyframes aside-bar
+  0%
+    left: 0
+  100%
+      right:  150px
+
+
+
+@media (min-width: 0px) and (max-width: 1800px) 
+    .side-news
+        display: none
+
+@media (min-width: 0px) and (max-width: 1550px) 
+    .nav-bottom__list
+        justify-content: flex-start
+
+@media (min-width: 0px) and (max-width: 1600px) 
+    .main-logo__container
+        left: 32%
+@media (min-width: 0px) and (max-width: 1550px) 
+    .main-logo__container .main-logo__pic
+        width: 90%
+    %template-container
+        padding-left: 100px
+        padding-right: 100px
+    .main-body .main-body__container
+        padding-top: 100px
+        padding-bottom: 100px
+    
+@media (min-width: 0px) and (max-width: 1300px) 
+    .main-logo__container .main-logo__pic
+        width: 80%
+
+@media (min-width: 950px) and (max-width: 1100px) 
+    .main-logo__container
+        left: 28%
+@media (min-width: 950px) and (max-width: 1100px) 
+    .main-logo__container
+        left: 28%
+    .main-footer__container
+        padding-left: 60px
+        padding-right: 60px
+@media (min-width: 850px) and (max-width: 950px) 
+    .main-logo__container
+        left: 23%
+        top: 20px
+@media (min-width: 0px) and (max-width: 880px) 
+    .main-logo
+        display: none
+    .side-contact__container
+        display: none
+    .main-logo__link
+        display: none
+    .nav-bottom 
+        display: none
+@media (min-width: 0px) and (max-width: 720px) 
+    .actual-projects__film-row
+        justify-content: center
+    .actual-projects__title
+        text-align: center
+@media (min-width: 0px) and (max-width: 676px) 
+    .actual-projects__film-row
+        justify-content: center
+    .lang__container
+        display: none
+    .lang-and-social-container .social
+        padding-left: 10px
+    .nav__container
+        padding-left: 35px
+
+@media (min-width: 0px) and (max-width: 480px) 
+    %template-container
+        padding-left: 15px
+        padding-right: 15px
+    .main-footer__item 
+        padding-left: 20px
+    .actual-projects__title
+        text-align: center
+    .lang-and-social-container .social
+        padding-left: 6px
+

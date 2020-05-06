@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="css/style.css")
+        title Document
+    body
+        header.main-header
+            .header__container
+                .nav
+                    .nav__container
+                        .mobile__menu__container
+                            a.nav__hamburger.hamburger(href="#")
+                                img.hamburger__icon(src="./img/icons/burger.png", alt="")
+                        .lang-and-social-container
+                            .lang__container
+                                a.lang__choice.rus(href="#") rus/
+                                a.lang__choice.eng(href="#") eng
+                            a.social.vk(href="https://vk.com/sverdlovsk_film_studios")
+                                img.vk__icon(src="./img/icons/Vk.png", alt="vk-icon")
+                            a.social.face(href="#")
+                                img.facebook__icon(src="./img/icons/Fb.png", alt="facebook-icon")
+                            a.social.inst(href="#")
+                                img.inst__icon(src="./img/icons/Inst.png", alt="instagram-icon")
+                            a.social.you(href="#")
+                                img.youtube__icon(src="./img/icons/YT.png", alt="youtube-icon") 
+                .aside-nav
+                    .aside-nav__container.hide
+                        ul.aside__list
+                            li.aside__li
+                              a(href="#") о Свердловской киностудии 
+                            li.aside__li 
+                              a(href="#") новости
+                            li.aside__li 
+                              a(href="#") органам власти
+                            li.aside__li 
+                              a(href="#") меценатам
+                            li.aside__li 
+                              a(href="#") контакты
+
+                .slider
+                    .slider__container
+                        .slider__item.active
+                            img(src="./img/slider-img/varvara.png", alt="Варвара")
+                            .slider__slide-name-block
+                               h2.slide__name Варвара
+                               a.slide__btn(href="#") Подробнее
+                        .slider__item.hide
+                            img(src="./img/slider-img/buran.png", alt="Буран")
+                        .slider__item.hide
+                            img(src="./img/slider-img/zabeg.png", alt="Забег")
+                        .slider__item.hide
+                            img(src="./img/slider-img/bg1.png", alt="фон1")    
+                        .main-logo
+                            .main-logo__container
+                               a.main-logo__link(href="#")
+                                 img.main-logo__pic(src="./img/logo.png")
+                        .side-news
+                            .side-news__container
+                               h3.side-news__title Digital Art идет в кино
+                               p.side-news__content На Свердловской киностудии в рамках развития партнерства Уральским федеральным университетом в рамках Проектного практикума, направление Digital Art, прошли защиты проектов студентов первого курса. Ребята представили экспертам свои первые разработки: видеоигры,…
+                               a.side-news__btn(href="#") Подробнее
+                        .side-contact
+                            .side-contact__container
+                               a.side-contact__btn(href="#") предложить сценарий
+                               a.side-contact__btn(href="#") отправить резюме
+                               a.side-contact__btn(href="#") написать нам
+            .nav-bottom
+                    .nav-bottom__container
+                        ul.nav-bottom__list
+                          li.nav-bottom__li
+                           a.nav-bottom__link(href="#") игровые Фильмы
+                          li.nav-bottom__li 
+                           a.nav-bottom__link(href="#") Документальные фильмы
+                          li.nav-bottom__li 
+                           a.nav-bottom__link(href="#") web-сериалы
+                          li.nav-bottom__li 
+                           a.nav-bottom__link(href="#") анимация
+                          li.nav-bottom__li 
+                           a.nav-bottom__link(href="#") костюмы
+                          li.nav-bottom__li 
+                           a.nav-bottom__link(href="#") услуги
+                          li.nav-bottom__li       
+                           a.nav-bottom__link(href="#") творческий технопарк
+        main.main-body 
+            .main-body__container
+                section.actual-projects
+                    h2.actual-projects__title.title-sect Актуальные проекты
+                    .actual-projects__film-row
+                        .acutal-projects__film.film
+                            img.film__poster(src="./img/film-poster.png", alt="фильм")
+                            h3.film__title Название фильма
+                        .acutal-projects__film.film
+                            img.film__poster(src="./img/film-poster.png", alt="фильм")
+                            h3.film__title Название фильма
+                        .acutal-projects__film.film
+                            img.film__poster(src="./img/film-poster.png", alt="фильм")
+                            h3.film__title Название фильма
+                        .acutal-projects__film.film
+                            img.film__poster(src="./img/film-poster.png", alt="фильм")
+                            h3.film__title Название фильма
+                        .acutal-projects__film.film
+                            img.film__poster(src="./img/film-poster.png", alt="фильм")
+                            h3.film__title Название фильма
+        footer.main-footer
+            .main-footer__container
+                .main-footer__logo
+                    img(src="./img/logo-footer.png") 
+                .main-footer__menu
+                    .main-footer__item
+                        h3 Карта сайта
+                        ul
+                          li 
+                             a(href="#") О Свердловской киностудии
+                          li
+                             a(href="#") История киностудии
+                          li
+                             a(href="#") Новости
+                    .main-footer__item
+                        ul
+                          li 
+                             a(href="#") Игровые фильмы
+                          li
+                             a(href="#") Документальные фильмы
+                          li
+                             a(href="#") Web-сериалы
+                          li
+                             a(href="#") Анимация
+
+                    .main-footer__item
+                        ul
+                          li 
+                             a(href="#") Кинотехнологические услуги
+                          li
+                             a(href="#") Отправить сценарий
+                          li
+                             a(href="#") Работать у нас
+
+                    .main-footer__item
+                        h3 Екатеринбург, проспект Ленина 50Д
+                        ul
+                          li 
+                             a(href="#") +7 (343) 350-00-40
+                          li
+                             a(href="#") +7 (343) 350-00-15
+                          li
+                             a(href="#") info@stranamedia.com
+
+
+
+                               
+                    
+
+
+    script(src="./js/script.js")       
